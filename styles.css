@@ -1,0 +1,125 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav, header div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #ffe082;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #004c99;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Article List on Blog Page */
+article {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #eef3fa;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+article a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+}
+
+/* CSS untuk reveal efek */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);  /* Mulai dari bawah */
+    transition: all 0.6s ease-out; /* Transisi halus */
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);  /* Elemen kembali ke posisi normal */
+}
