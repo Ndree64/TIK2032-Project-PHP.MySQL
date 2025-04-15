@@ -28,7 +28,7 @@ backToTop.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
 document.body.appendChild(backToTop);
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 200) {
         backToTop.style.display = "block";
     } else {
         backToTop.style.display = "none";
@@ -39,16 +39,6 @@ backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Alert ketika klik link artikel
-document.addEventListener("DOMContentLoaded", function () {
-    const artikelLinks = document.querySelectorAll("article a");
-
-    artikelLinks.forEach(link => {
-        link.addEventListener("click", function (e) {
-            alert("Anda akan diarahkan ke halaman artikel.");
-        });
-    });
-});
 
 // Membuat observer untuk mendeteksi elemen yang muncul di layar
 const observer = new IntersectionObserver((entries, observer) => {
